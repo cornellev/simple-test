@@ -15,7 +15,7 @@ static int __TEST_PASS = 0;
 
 void test_main(void);
 
-int main() {
+int main(void) {
     test_main();
     fprintf(stderr, "%d test%s passed!\n", __TEST_PASS, (__TEST_PASS == 1) ? "" : "s");
     return 0;
